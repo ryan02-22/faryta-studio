@@ -215,8 +215,14 @@
 
   .form-input option,
   .form-input optgroup {
-    background: var(--bg);
-    color: var(--fg);
+    background: #0d1422;
+    color: #f5f2eb;
+  }
+
+  [data-theme="light"] .form-input option,
+  [data-theme="light"] .form-input optgroup {
+    background: #ffffff;
+    color: #0d1422;
   }
 
   .gold-divider {
