@@ -1,23 +1,23 @@
 # Faryta Studio
 
-Premium photography website built with Next.js, Tailwind CSS, and Framer Motion.
+Website fotografi premium yang dibangun dengan Next.js, Tailwind CSS, dan Framer Motion.
 
-## Running Locally
+## Menjalankan Lokal
 
 ```powershell
 cd C:\Faryta-Studio
 cmd /c npm run dev
 ```
 
-Open `http://localhost:3000`.
+Buka `http://localhost:3000`.
 
-If port `3000` is busy:
+Jika port `3000` sedang dipakai:
 
 ```powershell
 cmd /c npm run dev -- --port 3001
 ```
 
-## Useful Commands
+## Command Berguna
 
 ```powershell
 cmd /c npm run lint
@@ -25,14 +25,14 @@ cmd /c npm run build
 cmd /c npm start
 ```
 
-## Project Structure
+## Struktur Project
 
 ```text
-app/                 Next.js app routes, SEO metadata, sitemap, robots, global CSS
-components/          Reusable page sections and UI components
-lib/data/            Editable website content grouped by section
-lib/site-data.js     Stable export file used by components
-public/              Static assets
+app/                 Route Next.js, metadata SEO, sitemap, robots, dan CSS global
+components/          Section halaman dan komponen UI yang dipakai ulang
+lib/data/            Konten website yang bisa diedit berdasarkan section
+lib/site-data.js     File export stabil yang dipakai komponen
+public/              Aset statis
 ```
 
-Avoid editing `.next/`; it is generated automatically by Next.js.
+Hindari mengedit `.next/` karena folder itu dibuat otomatis oleh Next.js.

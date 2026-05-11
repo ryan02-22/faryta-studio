@@ -9,14 +9,14 @@ import { SectionHeading } from "@/components/section-heading";
 import { portfolioItems } from "@/lib/site-data";
 
 const categories = [
-  { label: "All", value: "all" },
+  { label: "Semua", value: "all" },
   { label: "Wedding", value: "wedding" },
   { label: "Portrait", value: "portrait" },
-  { label: "Birthday", value: "birthday" },
+  { label: "Ulang Tahun", value: "birthday" },
   { label: "Sunatan", value: "sunatan" },
   { label: "Event", value: "event" },
   { label: "Studio", value: "studio" },
-  { label: "Family", value: "family" }
+  { label: "Keluarga", value: "family" }
 ];
 
 export function PortfolioSection() {
@@ -57,9 +57,9 @@ export function PortfolioSection() {
       <div className="section-inner">
         <AnimatedSection>
           <SectionHeading
-            eyebrow="Portfolio Gallery"
-            title="Visual stories presented in a cinematic, editorial-inspired gallery."
-            description="Explore selected frames across wedding celebrations, studio portraits, family moments, birthday events, sunatan sessions, and polished event documentation."
+            eyebrow="Galeri Portofolio"
+            title="Cerita visual dalam galeri modern bergaya sinematik dan editorial."
+            description="Jelajahi pilihan foto dari wedding, portrait studio, momen keluarga, ulang tahun, sunatan, dan dokumentasi event yang rapi."
             align="center"
           />
         </AnimatedSection>
@@ -137,7 +137,7 @@ export function PortfolioSection() {
                 type="button"
                 onClick={() => setSelectedItem(null)}
                 className="absolute right-4 top-4 z-10 inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-black/30 text-white transition hover:bg-black/50"
-                aria-label="Close preview"
+                aria-label="Tutup preview"
               >
                 <X className="h-5 w-5" />
               </button>
@@ -159,8 +159,8 @@ export function PortfolioSection() {
                   <p className="mt-5 text-sm leading-7 text-white/70">{selectedItem.description}</p>
                   <div className="gold-divider my-6" />
                   <p className="text-sm leading-7 text-white/70">
-                    Carefully directed to balance elegance, emotion, and premium visual polish for
-                    modern clients who value timeless imagery.
+                    Diarahkan dengan teliti untuk menyeimbangkan elegansi, emosi, dan visual
+                    premium bagi klien yang menghargai foto timeless.
                   </p>
                 </div>
               </div>

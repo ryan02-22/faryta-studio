@@ -8,9 +8,9 @@ export function ProcessSection() {
       <div className="section-inner">
         <AnimatedSection>
           <SectionHeading
-            eyebrow="Simple Process"
-            title="A modern booking journey that keeps everything clear and stress-free."
-            description="Every project is handled through a structured timeline so clients know what to expect at each stage, from the first chat to the final gallery delivery."
+            eyebrow="Proses Mudah"
+            title="Alur booking modern yang jelas, nyaman, dan minim drama."
+            description="Setiap project ditangani dengan timeline terstruktur agar klien tahu apa yang terjadi di setiap tahap, dari chat pertama sampai galeri final dikirim."
           />
         </AnimatedSection>
 
@@ -30,7 +30,7 @@ export function ProcessSection() {
                     </div>
                     <div className="glass-card mt-4 h-full p-6 pt-8 lg:mt-14">
                       <p className="text-xs uppercase tracking-[0.35em] text-[var(--accent)]">
-                        Step {index + 1}
+                        Tahap {index + 1}
                       </p>
                       <h3 className="mt-4 text-2xl">{step.title}</h3>
                       <p className="mt-3 text-sm leading-7 text-[var(--muted)]">

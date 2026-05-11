@@ -8,9 +8,9 @@ export function WhyChooseSection() {
       <div className="section-inner">
         <AnimatedSection>
           <SectionHeading
-            eyebrow="Why Choose Us"
-            title="Premium service standards with a friendly, reliable creative process."
-            description="We combine professional execution with genuine hospitality so clients feel confident before, during, and after every session."
+            eyebrow="Kenapa Memilih Kami"
+            title="Standar layanan premium dengan proses kreatif yang ramah dan terpercaya."
+            description="Kami menggabungkan eksekusi profesional dengan pelayanan yang hangat, sehingga klien merasa percaya diri sebelum, selama, dan setelah sesi foto."
           />
         </AnimatedSection>
 

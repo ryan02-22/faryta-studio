@@ -10,7 +10,7 @@ const defaultForm = {
   name: "",
   phone: "",
   email: "",
-  eventType: "Wedding Photography",
+  eventType: "Fotografi Wedding",
   date: "",
   location: "",
   message: ""
@@ -24,16 +24,16 @@ export function BookingSection() {
     setForm((current) => ({ ...current, [name]: value }));
   };
 
-  const buildWhatsappMessage = () => {
+const buildWhatsappMessage = () => {
     const lines = [
-      "Hello Faryta Studio, I would like to book a session.",
-      `Name: ${form.name}`,
-      `Phone: ${form.phone}`,
+      "Halo Faryta Studio, saya ingin booking sesi foto.",
+      `Nama: ${form.name}`,
+      `Telepon: ${form.phone}`,
       `Email: ${form.email}`,
-      `Event Type: ${form.eventType}`,
-      `Date: ${form.date || "-"}`,
-      `Location: ${form.location || "-"}`,
-      `Message: ${form.message || "-"}`
+      `Jenis Acara: ${form.eventType}`,
+      `Tanggal: ${form.date || "-"}`,
+      `Lokasi: ${form.location || "-"}`,
+      `Pesan: ${form.message || "-"}`
     ];
 
     return `${siteConfig.whatsappBase}?text=${encodeURIComponent(lines.join("\n"))}`;
@@ -50,30 +50,30 @@ export function BookingSection() {
         <AnimatedSection>
           <div className="glass-card h-full p-8 sm:p-10">
             <SectionHeading
-              eyebrow="Easy Booking"
-              title="Tell us about your event and book in minutes."
-              description="Share the basics, and we will continue the consultation through WhatsApp for fast, friendly coordination."
+              eyebrow="Booking Mudah"
+              title="Ceritakan acara Anda dan booking hanya dalam beberapa menit."
+              description="Isi informasi dasar, lalu kami lanjutkan konsultasi melalui WhatsApp agar koordinasi cepat dan nyaman."
             />
 
             <div className="mt-8 space-y-5">
               <div className="rounded-[1.5rem] border border-[var(--line)] bg-white/5 p-5">
                 <div className="flex items-center gap-3">
                   <CalendarClock className="h-5 w-5 text-[var(--accent)]" />
-                  <p className="text-lg">Flexible schedule for studio and on-location sessions</p>
+                  <p className="text-lg">Jadwal fleksibel untuk sesi studio dan lokasi pilihan</p>
                 </div>
                 <p className="mt-3 text-sm leading-7 text-[var(--muted)]">
-                  Perfect for weddings, family portraits, graduation, corporate, school events,
-                  birthday celebrations, and brand campaigns.
+                  Cocok untuk wedding, foto keluarga, wisuda, corporate, acara sekolah, ulang
+                  tahun, dan kebutuhan campaign brand.
                 </p>
               </div>
               <div className="rounded-[1.5rem] border border-[var(--line)] bg-white/5 p-5">
                 <div className="flex items-center gap-3">
                   <MessageCircleMore className="h-5 w-5 text-[var(--accent)]" />
-                  <p className="text-lg">Fast response through WhatsApp consultation</p>
+                  <p className="text-lg">Respon cepat melalui konsultasi WhatsApp</p>
                 </div>
                 <p className="mt-3 text-sm leading-7 text-[var(--muted)]">
-                  We help with mood, timeline, wardrobe advice, location ideas, and the most
-                  suitable service package for your needs.
+                  Kami bantu menentukan mood, timeline, saran busana, ide lokasi, dan paket
+                  layanan yang paling sesuai dengan kebutuhan Anda.
                 </p>
               </div>
             </div>
@@ -85,7 +85,7 @@ export function BookingSection() {
             <div className="grid gap-5 md:grid-cols-2">
               <div>
                 <label htmlFor="name" className="mb-2 block text-sm text-[var(--muted)]">
-                  Name
+                  Nama
                 </label>
                 <input
                   id="name"
@@ -95,12 +95,12 @@ export function BookingSection() {
                   value={form.name}
                   onChange={handleChange}
                   className="form-input"
-                  placeholder="Your full name"
+                  placeholder="Nama lengkap Anda"
                 />
               </div>
               <div>
                 <label htmlFor="phone" className="mb-2 block text-sm text-[var(--muted)]">
-                  Phone
+                  Telepon
                 </label>
                 <input
                   id="phone"
@@ -110,7 +110,7 @@ export function BookingSection() {
                   value={form.phone}
                   onChange={handleChange}
                   className="form-input"
-                  placeholder="WhatsApp number"
+                  placeholder="Nomor WhatsApp"
                 />
               </div>
               <div>
@@ -130,7 +130,7 @@ export function BookingSection() {
               </div>
               <div>
                 <label htmlFor="eventType" className="mb-2 block text-sm text-[var(--muted)]">
-                  Event Type
+                  Jenis Acara
                 </label>
                 <select
                   id="eventType"
@@ -148,7 +148,7 @@ export function BookingSection() {
               </div>
               <div>
                 <label htmlFor="date" className="mb-2 block text-sm text-[var(--muted)]">
-                  Date
+                  Tanggal
                 </label>
                 <input
                   id="date"
@@ -161,7 +161,7 @@ export function BookingSection() {
               </div>
               <div>
                 <label htmlFor="location" className="mb-2 block text-sm text-[var(--muted)]">
-                  Location
+                  Lokasi
                 </label>
                 <input
                   id="location"
@@ -170,14 +170,14 @@ export function BookingSection() {
                   value={form.location}
                   onChange={handleChange}
                   className="form-input"
-                  placeholder="City or venue"
+                  placeholder="Kota atau venue"
                 />
               </div>
             </div>
 
             <div className="mt-5">
               <label htmlFor="message" className="mb-2 block text-sm text-[var(--muted)]">
-                Message
+                Pesan
               </label>
               <textarea
                 id="message"
@@ -186,16 +186,16 @@ export function BookingSection() {
                 value={form.message}
                 onChange={handleChange}
                 className="form-input resize-none"
-                placeholder="Tell us the mood, guest count, style reference, or any special request."
+                placeholder="Ceritakan mood, jumlah tamu, referensi gaya, atau request khusus."
               />
             </div>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="text-sm leading-7 text-[var(--muted)]">
-                By sending this form, your request opens directly in WhatsApp for quick booking.
+                Setelah dikirim, permintaan booking akan langsung terbuka di WhatsApp.
               </p>
               <button type="submit" className="btn-primary">
-                WhatsApp Booking
+                Booking via WhatsApp
                 <SendHorizontal className="h-4 w-4" />
               </button>
             </div>

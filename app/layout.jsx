@@ -16,44 +16,44 @@ const displayFont = Cormorant_Garamond({
 export const metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
   title: {
-    default: `${siteConfig.name} | Premium Photography Studio`,
+    default: `${siteConfig.name} | Studio Fotografi Profesional`,
     template: `%s | ${siteConfig.name}`
   },
   description:
-    "Luxury photography website for weddings, portraits, family moments, corporate events, and cinematic visual storytelling.",
+    "Studio fotografi profesional untuk wedding, portrait, keluarga, event, corporate, produk, dan dokumentasi visual sinematik.",
   keywords: [
-    "photography studio",
+    "studio fotografi",
+    "jasa fotografer",
     "wedding photography",
-    "portrait studio",
-    "family photo",
-    "event documentation",
-    "corporate photography",
-    "premium photographer",
-    "Jakarta photographer",
-    "international photography studio"
+    "foto studio",
+    "foto keluarga",
+    "dokumentasi event",
+    "fotografer profesional",
+    "fotografer wedding",
+    "fotografi produk"
   ],
   openGraph: {
-    title: `${siteConfig.name} | Premium Photography Studio`,
+    title: `${siteConfig.name} | Studio Fotografi Profesional`,
     description:
-      "Capturing timeless moments with elegance for weddings, portraits, private milestones, and corporate events.",
+      "Mengabadikan momen berharga dengan elegan untuk wedding, portrait, keluarga, acara pribadi, dan corporate event.",
     url: siteConfig.siteUrl,
     siteName: siteConfig.name,
-    locale: "en_US",
+    locale: "id_ID",
     type: "website",
     images: [
       {
         url: siteConfig.heroImage,
         width: 1600,
         height: 900,
-        alt: `${siteConfig.name} luxury photography hero`
+        alt: `${siteConfig.name} hero fotografi premium`
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} | Premium Photography Studio`,
+    title: `${siteConfig.name} | Studio Fotografi Profesional`,
     description:
-      "Luxury photography crafted for weddings, portraits, family celebrations, and brand storytelling.",
+      "Jasa fotografi premium untuk wedding, portrait, keluarga, event, produk, dan kebutuhan brand.",
     images: [siteConfig.heroImage]
   },
   alternates: {
@@ -83,7 +83,7 @@ function ThemeScript() {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="id" suppressHydrationWarning>
       <head>
         <ThemeScript />
       </head>

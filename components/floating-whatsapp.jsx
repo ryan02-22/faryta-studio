@@ -22,7 +22,7 @@ export function FloatingWhatsapp() {
         <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#25D366] text-[#081118]">
           <MessageCircleMore className="h-5 w-5" />
         </span>
-        WhatsApp Booking
+        Booking WhatsApp
       </Link>
     </motion.div>
   );

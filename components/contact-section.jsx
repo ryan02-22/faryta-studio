@@ -37,7 +37,7 @@ const contactCards = [
     icon: Mail
   },
   {
-    title: "Location",
+    title: "Lokasi",
     value: siteConfig.location,
     href: siteConfig.mapsUrl,
     icon: MapPin
@@ -51,9 +51,9 @@ export function ContactSection() {
         <AnimatedSection>
           <div className="glass-card h-full p-8 sm:p-10">
             <SectionHeading
-              eyebrow="Contact Us"
-              title="Reach the studio through the channel you prefer."
-              description="Whether you are planning a wedding, a corporate event, or a personal portrait session, we are ready to help with a polished and responsive consultation."
+              eyebrow="Hubungi Kami"
+              title="Hubungi studio melalui channel yang paling nyaman untuk Anda."
+              description="Baik untuk wedding, corporate event, maupun sesi portrait pribadi, kami siap membantu dengan konsultasi yang rapi dan responsif."
             />
 
             <div className="mt-10 grid gap-4 sm:grid-cols-2">
@@ -83,11 +83,11 @@ export function ContactSection() {
             <div className="mt-8 rounded-[1.5rem] border border-[var(--line)] bg-white/5 p-5">
               <div className="flex items-center gap-3">
                 <Navigation className="h-5 w-5 text-[var(--accent)]" />
-                <p className="text-lg">Serving studio, home service, and on-location sessions</p>
+                <p className="text-lg">Melayani sesi studio, home service, dan lokasi pilihan</p>
               </div>
               <p className="mt-3 text-sm leading-7 text-[var(--muted)]">
-                Available for local bookings, destination sessions, and clients needing an
-                international-facing visual presentation.
+                Tersedia untuk booking lokal, sesi di lokasi pilihan, dan klien yang membutuhkan
+                presentasi visual berstandar profesional.
               </p>
             </div>
           </div>
@@ -96,7 +96,7 @@ export function ContactSection() {
         <AnimatedSection delay={0.08}>
           <div className="overflow-hidden rounded-[2rem] border border-[var(--line)] bg-[var(--surface)] p-3 shadow-luxury">
             <iframe
-              title="Studio location map"
+              title="Peta lokasi studio"
               src={siteConfig.mapEmbed}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

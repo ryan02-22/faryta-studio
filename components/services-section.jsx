@@ -10,9 +10,9 @@ export function ServicesSection() {
       <div className="section-inner">
         <AnimatedSection>
           <SectionHeading
-            eyebrow="Signature Services"
-            title="A complete photography service line for private moments and professional events."
-            description="From wedding stories and family sessions to corporate documentation and product campaigns, each service is crafted with elegant direction, premium editing, and a client-friendly workflow."
+            eyebrow="Layanan Unggulan"
+            title="Layanan fotografi lengkap untuk momen pribadi dan acara profesional."
+            description="Mulai dari wedding, foto keluarga, dokumentasi corporate, hingga campaign produk, setiap layanan dirancang dengan arahan elegan, editing premium, dan alur kerja yang nyaman untuk klien."
             align="center"
           />
         </AnimatedSection>
@@ -35,7 +35,7 @@ export function ServicesSection() {
                     href="#booking"
                     className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[var(--fg)] transition group-hover:text-[var(--accent)]"
                   >
-                    See Details
+                    Lihat Detail
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                 </div>

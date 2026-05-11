@@ -31,7 +31,7 @@ export function ThemeToggle() {
       type="button"
       onClick={toggleTheme}
       className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[var(--line)] bg-white/5 text-[var(--fg)] transition hover:-translate-y-0.5 hover:bg-white/10"
-      aria-label={`Switch to ${isDark ? "light" : "dark"} mode`}
+      aria-label={`Ganti ke mode ${isDark ? "terang" : "gelap"}`}
     >
       {isDark ? <SunMedium className="h-4 w-4" /> : <MoonStar className="h-4 w-4" />}
     </button>

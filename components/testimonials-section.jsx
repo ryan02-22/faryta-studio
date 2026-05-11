@@ -9,9 +9,9 @@ export function TestimonialsSection() {
       <div className="section-inner">
         <AnimatedSection>
           <SectionHeading
-            eyebrow="Client Words"
-            title="What clients feel after experiencing the studio."
-            description="Trust is built through smooth communication, calm direction, elegant results, and delivery that feels every bit as polished as the session itself."
+            eyebrow="Kata Klien"
+            title="Kesan klien setelah merasakan pengalaman bersama studio."
+            description="Kepercayaan dibangun melalui komunikasi yang lancar, arahan yang tenang, hasil elegan, dan proses delivery yang terasa rapi sejak awal."
             align="center"
           />
         </AnimatedSection>

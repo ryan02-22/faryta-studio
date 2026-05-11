@@ -14,12 +14,12 @@ export function AboutSection() {
           <div className="relative overflow-hidden rounded-[2rem] border border-[var(--line)]">
             <div className="absolute left-6 top-6 z-10 glass-card px-5 py-3">
               <p className="text-xs uppercase tracking-[0.3em] text-[var(--accent)]">
-                About {siteConfig.name}
+                Tentang {siteConfig.name}
               </p>
             </div>
             <Image
               src={siteConfig.aboutImage}
-              alt="Professional photographer preparing a studio session"
+              alt="Fotografer profesional menyiapkan sesi studio"
               width={900}
               height={1200}
               sizes="(min-width: 1024px) 45vw, 100vw"
@@ -27,8 +27,8 @@ export function AboutSection() {
             />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#060b14] via-[#060b14]/50 to-transparent p-8">
               <p className="max-w-sm text-sm leading-7 text-white/75">
-                Every session is directed with calm confidence, elegant lighting, and a deep focus
-                on genuine emotion.
+                Setiap sesi diarahkan dengan tenang, pencahayaan elegan, dan fokus pada emosi
+                yang natural.
               </p>
             </div>
           </div>
@@ -36,22 +36,22 @@ export function AboutSection() {
 
         <AnimatedSection delay={0.1}>
           <SectionHeading
-            eyebrow="About The Studio"
-            title="Built for stories that deserve more than ordinary documentation."
-            description="We blend cinematic direction, refined composition, and warm hospitality to create imagery that feels premium, trustworthy, and memorable for clients in Indonesia and beyond."
+            eyebrow="Tentang Studio"
+            title="Dibangun untuk cerita yang layak diabadikan lebih dari sekadar dokumentasi biasa."
+            description="Kami menggabungkan arahan sinematik, komposisi rapi, dan pelayanan hangat untuk menghasilkan visual yang terasa premium, terpercaya, dan berkesan bagi klien di Indonesia maupun luar negeri."
           />
 
           <div className="mt-8 space-y-5">
             <p className="section-copy">
-              Faryta Studio is designed for couples, families, professionals, communities, and
-              brands who want a visual experience that feels organized, elevated, and emotionally
-              resonant. From intimate portraits to large-scale celebrations, we keep the process
-              smooth while preserving the atmosphere that makes each event unique.
+              Faryta Studio hadir untuk pasangan, keluarga, profesional, komunitas, dan brand yang
+              menginginkan pengalaman visual yang rapi, elegan, dan berkesan. Dari portrait intim
+              hingga acara besar, kami menjaga proses tetap lancar sambil mempertahankan suasana
+              unik dari setiap momen.
             </p>
             <p className="section-copy">
-              Our approach centers on thoughtful preparation, clear communication, flattering
-              direction, and polished editing. The result is a consistent premium standard that
-              feels natural, modern, and internationally presentable.
+              Pendekatan kami berfokus pada persiapan matang, komunikasi jelas, arahan yang nyaman,
+              dan editing yang polished. Hasilnya adalah standar visual premium yang natural,
+              modern, dan siap tampil profesional.
             </p>
           </div>
 

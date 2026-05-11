@@ -11,9 +11,9 @@ export function InstagramSection() {
       <div className="section-inner">
         <AnimatedSection>
           <SectionHeading
-            eyebrow="Instagram Preview"
-            title="Recent visual moodboards from our social feed."
-            description="A quick look at the atmosphere, styling, and storytelling direction clients can expect across portrait, celebration, and commercial sessions."
+            eyebrow="Preview Instagram"
+            title="Cuplikan moodboard visual dari feed sosial kami."
+            description="Sekilas suasana, styling, dan arah storytelling yang bisa Anda rasakan dalam sesi portrait, perayaan, maupun kebutuhan komersial."
             align="center"
           />
         </AnimatedSection>

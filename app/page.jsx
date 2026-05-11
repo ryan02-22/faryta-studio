@@ -21,9 +21,9 @@ const jsonLd = {
   url: siteConfig.siteUrl,
   telephone: siteConfig.phoneDisplay,
   email: siteConfig.email,
-  areaServed: ["Indonesia", "International"],
+  areaServed: ["Indonesia", "Internasional"],
   description:
-    "Premium photography studio for weddings, portraits, family sessions, events, personal branding, and corporate documentation.",
+    "Studio fotografi premium untuk wedding, portrait, keluarga, event, personal branding, dan dokumentasi perusahaan.",
   serviceType: services.map((service) => service.title),
   sameAs: [siteConfig.instagramUrl, siteConfig.tiktokUrl, siteConfig.whatsappUrl]
 };

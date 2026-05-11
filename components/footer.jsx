@@ -19,16 +19,16 @@ export function Footer() {
               {siteConfig.name}
             </p>
             <h2 className="mt-5 max-w-md text-4xl">
-              Luxury photography crafted to feel cinematic, personal, and timeless.
+              Fotografi premium yang terasa sinematik, personal, dan timeless.
             </h2>
             <p className="mt-5 max-w-xl text-sm leading-7 text-[var(--muted)]">
-              For couples, families, professionals, communities, and brands who want premium
-              visual storytelling with a calm and polished experience.
+              Untuk pasangan, keluarga, profesional, komunitas, dan brand yang menginginkan
+              visual storytelling premium dengan pengalaman yang tenang dan rapi.
             </p>
           </div>
 
           <div>
-            <p className="text-xs uppercase tracking-[0.32em] text-[var(--muted)]">Navigation</p>
+            <p className="text-xs uppercase tracking-[0.32em] text-[var(--muted)]">Navigasi</p>
             <div className="mt-5 flex flex-col gap-3">
               {navItems.map((item) => (
                 <Link
@@ -43,7 +43,7 @@ export function Footer() {
           </div>
 
           <div>
-            <p className="text-xs uppercase tracking-[0.32em] text-[var(--muted)]">Social</p>
+            <p className="text-xs uppercase tracking-[0.32em] text-[var(--muted)]">Sosial</p>
             <div className="mt-5 flex flex-col gap-3">
               {socialLinks.map((item) => {
                 const Icon = item.icon;
@@ -68,7 +68,7 @@ export function Footer() {
         <div className="gold-divider my-8" />
 
         <div className="flex flex-col gap-3 text-sm text-[var(--muted)] sm:flex-row sm:items-center sm:justify-between">
-          <p>Copyright {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
+          <p>Hak cipta {new Date().getFullYear()} {siteConfig.name}. Seluruh hak cipta dilindungi.</p>
           <p>{siteConfig.tagline}</p>
         </div>
       </div>

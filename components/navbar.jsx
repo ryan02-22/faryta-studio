@@ -47,7 +47,7 @@ export function Navbar() {
               <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[var(--accent)]">
                 {siteConfig.name}
               </p>
-              <p className="text-xs text-[var(--muted)]">Luxury photography atelier</p>
+              <p className="text-xs text-[var(--muted)]">Studio fotografi premium</p>
             </div>
           </Link>
 
@@ -66,7 +66,7 @@ export function Navbar() {
           <div className="hidden items-center gap-3 lg:flex">
             <ThemeToggle />
             <Link href="#booking" className="btn-primary">
-              Book Now
+              Booking Sekarang
             </Link>
           </div>
 
@@ -76,7 +76,7 @@ export function Navbar() {
               type="button"
               onClick={() => setIsOpen((open) => !open)}
               className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[var(--line)] bg-white/5 text-[var(--fg)] transition hover:bg-white/10"
-              aria-label="Toggle navigation"
+              aria-label="Buka tutup navigasi"
               aria-expanded={isOpen}
             >
               {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -105,7 +105,7 @@ export function Navbar() {
                   </Link>
                 ))}
                 <Link href="#booking" onClick={() => setIsOpen(false)} className="btn-primary mt-2">
-                  Book Now
+                  Booking Sekarang
                 </Link>
               </nav>
             </motion.div>
