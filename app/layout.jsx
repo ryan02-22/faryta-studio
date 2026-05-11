@@ -59,6 +59,9 @@ export const metadata = {
   alternates: {
     canonical: siteConfig.siteUrl
   },
+  verification: {
+    google: siteConfig.googleSiteVerification
+  },
   icons: {
     icon: "/favicon.svg"
   }
