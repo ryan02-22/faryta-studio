@@ -213,6 +213,12 @@
     box-shadow: 0 0 0 4px rgba(216, 180, 106, 0.09);
   }
 
+  .form-input option,
+  .form-input optgroup {
+    background: var(--bg);
+    color: var(--fg);
+  }
+
   .gold-divider {
     height: 1px;
     background: linear-gradient(90deg, transparent, rgba(216, 180, 106, 0.6), transparent);
