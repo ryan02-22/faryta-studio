@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { AnimatedSection } from "@/components/animated-section";
 import { SectionHeading } from "@/components/section-heading";
-import { services } from "@/lib/site-data";
+import { services, siteConfig } from "@/lib/site-data";
 
 export function ServicesSection() {
   return (
@@ -31,13 +31,25 @@ export function ServicesSection() {
                   <p className="mt-4 flex-1 text-sm leading-7 text-[var(--muted)]">
                     {service.description}
                   </p>
-                  <Link
-                    href="#booking"
-                    className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[var(--fg)] transition group-hover:text-[var(--accent)]"
-                  >
-                    Lihat Detail
-                    <ArrowRight className="h-4 w-4" />
-                  </Link>
+                  {service.isWhatsapp ? (
+                    <a
+                      href={siteConfig.whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[var(--fg)] transition group-hover:text-[var(--accent)]"
+                    >
+                      Konsultasi Sekarang
+                      <ArrowRight className="h-4 w-4" />
+                    </a>
+                  ) : (
+                    <Link
+                      href="#booking"
+                      className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[var(--fg)] transition group-hover:text-[var(--accent)]"
+                    >
+                      Lihat Detail
+                      <ArrowRight className="h-4 w-4" />
+                    </Link>
+                  )}
                 </div>
               </AnimatedSection>
             );
