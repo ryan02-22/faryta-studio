@@ -24,7 +24,7 @@ export function BookingSection() {
     setForm((current) => ({ ...current, [name]: value }));
   };
 
-const buildWhatsappMessage = () => {
+const buildBookingMessage = () => {
     const lines = [
       "Halo Faryta Studio, saya ingin booking sesi foto.",
       `Nama: ${form.name}`,
@@ -39,9 +39,19 @@ const buildWhatsappMessage = () => {
     return `${siteConfig.whatsappBase}?text=${encodeURIComponent(lines.join("\n"))}`;
   };
 
+  const buildKonsultasiMessage = () => {
+    const lines = [
+      "Halo Faryta Studio, saya ingin konsultasi gratis.",
+      `Nama: ${form.name || "-"}`,
+      `Telepon: ${form.phone || "-"}`
+    ];
+
+    return `${siteConfig.whatsappBase}?text=${encodeURIComponent(lines.join("\n"))}`;
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    window.open(buildWhatsappMessage(), "_blank", "noopener,noreferrer");
+    window.open(buildBookingMessage(), "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -195,10 +205,9 @@ const buildWhatsappMessage = () => {
                 Setelah dikirim, permintaan booking akan langsung terbuka di WhatsApp.
               </p>
               <div className="flex flex-col gap-3 sm:flex-row">
-                <a
-                  href={siteConfig.whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  type="button"
+                  onClick={() => window.open(buildKonsultasiMessage(), "_blank", "noopener,noreferrer")}
                   className="group relative inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-br from-[#25D366] to-[#128C7E] px-6 py-3 text-sm font-semibold text-white shadow-[0_8px_30px_rgba(37,211,102,0.35)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_40px_rgba(37,211,102,0.45)] overflow-hidden"
                 >
                   <span className="absolute inset-0 bg-gradient-to-br from-white/0 via-white/10 to-white/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
@@ -206,7 +215,7 @@ const buildWhatsappMessage = () => {
                     <MessageCircleMore className="h-4 w-4" />
                   </span>
                   <span className="relative">Konsultasi Gratis</span>
-                </a>
+                </button>
                 <button
                   type="submit"
                   className="group relative inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-br from-[var(--accent)] via-[var(--accent)] to-[var(--accent-strong)] px-6 py-3 text-sm font-semibold text-[#0e1119] shadow-[0_8px_30px_rgba(216,180,106,0.3)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_40px_rgba(216,180,106,0.4)] overflow-hidden"
