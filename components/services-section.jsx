@@ -36,7 +36,7 @@ export function ServicesSection() {
                       href={siteConfig.whatsappUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[var(--fg)] transition group-hover:text-[var(--accent)]"
+                      className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-5 py-2.5 text-sm font-semibold text-white shadow-lg transition hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(37,211,102,0.3)]"
                     >
                       Konsultasi Sekarang
                       <ArrowRight className="h-4 w-4" />
