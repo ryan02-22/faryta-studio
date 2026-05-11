@@ -4,7 +4,9 @@
       "WebFetch(domain:minimax-algeng-chat-tts-us.oss-us-east-1.aliyuncs.com)",
       "Bash(git add *)",
       "Bash(git commit *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(node -c lib/site-data.js)",
+      "Bash(npm run *)"
     ]
   }
 }
