@@ -33,7 +33,7 @@ export function ServicesSection() {
                   </p>
                   {service.isWhatsapp ? (
                     <a
-                      href={siteConfig.whatsappUrl}
+                      href={siteConfig.konsultasiWhatsappUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="group relative mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-br from-[#25D366] to-[#128C7E] px-6 py-3 text-sm font-semibold text-white shadow-[0_8px_30px_rgba(37,211,102,0.35)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_40px_rgba(37,211,102,0.45)] overflow-hidden"
