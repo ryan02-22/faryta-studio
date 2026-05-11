@@ -149,7 +149,7 @@ const buildBookingMessage = () => {
                   onChange={handleChange}
                   className="form-input"
                 >
-                  {services.map((service) => (
+                  {services.filter(service => !service.hidden).map((service) => (
                     <option key={service.title} value={service.title}>
                       {service.title}
                     </option>
